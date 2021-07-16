@@ -1,0 +1,23 @@
+<table class="table table-striped"> 
+    <thead>
+        <tr>
+            <th>Reservation Id</th>
+            <th>Reservation Day</th>
+            <th>Reservation Hour</th>
+            <th>Name</th>
+            <th>Phone Number</th>
+            <th>Number Of Persons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let dataItem of ReservationList">
+            <td>{{dataItem.ReservationId}}</td>
+            <td>{{dataItem.ReservationDay}}</td> 
+            <td>{{dataItem.ReservationHour}}</td>
+            <td>{{dataItem.Name}}</td>
+            <td>{{dataItem.Phonenumber}}</td>
+            <td>{{dataItem.Numberofpersons}}</td>
+
+        </tr>
+    </tbody>
+</table>
