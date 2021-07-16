@@ -13,6 +13,6 @@ class ReservationSerializer(serializers.ModelSerializer):
                     'Numberofpersons')
 
 class ContactusSerializer(serializers.ModelSerializer): 
-    class Meta:
+    class Meta: 
         model = Contactus 
         

@@ -10,35 +10,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RenameField(
-            model_name='reservation',
-            old_name='NameId',
-            new_name='Name',
-        ),
-        migrations.RemoveField(
-            model_name='reservation',
-            name='ReservationDayId',
-        ),
-        migrations.RemoveField(
-            model_name='reservation',
-            name='ReservationHourId',
-        ),
-        migrations.AddField(
-            model_name='reservation',
-            name='ReservationDay',
-            field=models.CharField(default='Today', max_length=20),
-            preserve_default=False,
-        ),
-        migrations.AddField(
-            model_name='reservation',
-            name='ReservationHour',
-            field=models.CharField(default=9, max_length=20),
-            preserve_default=False,
-        ),
-        migrations.AddField(
-            model_name='reservation',
-            name='id',
-            field=models.BigAutoField(auto_created=True, default=0, primary_key=True, serialize=False, verbose_name='ID'),
-            preserve_default=False,
-        ),
+        
     ]

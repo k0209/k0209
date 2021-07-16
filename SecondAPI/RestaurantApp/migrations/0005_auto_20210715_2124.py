@@ -10,38 +10,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RemoveField(
-            model_name='reservation',
-            name='id',
-        ),
-        migrations.AddField(
-            model_name='reservation',
-            name='ReservationId',
-            field=models.AutoField(auto_created=True, default=1, primary_key=True, serialize=False),
-        ),
-        migrations.AlterField(
-            model_name='reservation',
-            name='Name',
-            field=models.CharField(default='Anonymous', max_length=50),
-        ),
-        migrations.AlterField(
-            model_name='reservation',
-            name='Numberofpersons',
-            field=models.IntegerField(default=1),
-        ),
-        migrations.AlterField(
-            model_name='reservation',
-            name='Phonenumber',
-            field=models.CharField(default='Not Disclosed', max_length=15),
-        ),
-        migrations.AlterField(
-            model_name='reservation',
-            name='ReservationDay',
-            field=models.CharField(default='Today', max_length=20),
-        ),
-        migrations.AlterField(
-            model_name='reservation',
-            name='ReservationHour',
-            field=models.CharField(default='9:00 PM', max_length=20),
-        ),
+        
     ]

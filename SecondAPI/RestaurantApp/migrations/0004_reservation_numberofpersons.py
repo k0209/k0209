@@ -10,10 +10,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.AddField(
-            model_name='reservation',
-            name='Numberofpersons',
-            field=models.IntegerField(default=1),
-            preserve_default=False,
-        ),
+        
     ]

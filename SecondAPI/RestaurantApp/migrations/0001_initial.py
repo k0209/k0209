@@ -11,22 +11,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.CreateModel(
-            name='Contactus',
-            fields=[
-                ('Emp', models.AutoField(primary_key=True, serialize=False)),
-                ('EmployeeName', models.CharField(max_length=100)),
-                ('Department', models.CharField(max_length=100)),
-                ('DateOfJoining', models.DateField()),
-                ('PhotoFileName', models.CharField(max_length=100)),
-            ],
-        ),
-        migrations.CreateModel(
-            name='Reservation',
-            fields=[
-                ('ReservationDayId', models.AutoField(primary_key=True, serialize=False)),
-                ('ReservationHourId', models.CharField(max_length=100)),
-                ('NameId', models.CharField(max_length=50)),
-            ],
-        ),
+        
     ]
